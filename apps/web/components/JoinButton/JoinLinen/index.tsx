@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSession } from 'utilities/auth/react';
+import { useSession } from '@linen/auth/client';
 import Toast from '@linen/ui/Toast';
 import { useJoinContext } from 'contexts/Join';
 import Link from '../Link';
