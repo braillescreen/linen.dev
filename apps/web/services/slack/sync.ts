@@ -1,4 +1,4 @@
-import { findAccountById } from 'lib/models';
+import { findAccountById } from 'services/accounts';
 import { SyncStatus, updateAndNotifySyncStatus } from 'services/sync';
 import {
   fetchTeamInfo,
@@ -40,7 +40,7 @@ export async function slackSync({
     SyncStatus.IN_PROGRESS,
     account.name,
     account.homeUrl,
-    account.communityUrl,
+    account.communityUrl
   );
 
   try {
